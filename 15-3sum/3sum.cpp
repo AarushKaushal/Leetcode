@@ -3,10 +3,6 @@ public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         sort(nums.begin(),nums.end());
         int n=nums.size();
-        if(n <3 || n > 3E3) return {};
-        for(int i : nums){
-            if(i < -1E5 || i> 1E5) return{};
-        }
         vector<vector<int>> ans;
         for(int i=0;i<n-2;i++){
             int start= i+1;
