@@ -1,0 +1,8 @@
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        int i=0;
+        for( i=0; i < nums.size();i++)if(find(nums.begin(),nums.end(),i)==nums.end())break;
+        return i;
+    }
+};
